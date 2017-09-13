@@ -1,0 +1,13 @@
+
+<h1>クイズ一覧</h1>
+
+<table>
+  <% @quizzes.each do |quiz| %>
+    <tr>
+      <td><%= quiz.id %></td>
+      <td><img src="<%= quiz.image %>" /></td>
+      <td><%= quiz.answer %></td>
+    </tr>
+  <% end %>
+</table>
+　　　

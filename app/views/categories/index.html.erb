@@ -1,0 +1,7 @@
+<h1>カテゴリー一覧</h1>
+
+<ul>
+  <% @categories.each do |category| %>
+    <li><%= category.id.to_s + ': ' + category.name %></li>
+  <% end %>
+</ul>

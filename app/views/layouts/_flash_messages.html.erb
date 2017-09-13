@@ -1,0 +1,9 @@
+<% flash.each do |message_type, message| %>
+  <div align="center">
+   <% if message_type == "success" %>
+     <%= image_tag '555.png' %>
+   <% elsif message_type == "danger" %>
+     <%= image_tag '444.png' %>
+   <% end %>
+  </div>
+<% end %>
